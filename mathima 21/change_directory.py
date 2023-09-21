@@ -1,3 +1,6 @@
 import os
+os.chdir("C:\\Users\\evdokimos\\Desktop\\untitled3\\mathima 20")
 
-os.chdir("\untitled3\mathima 21")
+# Χρήση μιας ακατέργαστης συμβολοσειράς (προθέτοντας τη συμβολοσειρά με 'r')
+
+os.chdir(r'C:\Users\evdokimos\Desktop\untitled3\mathima 21')
