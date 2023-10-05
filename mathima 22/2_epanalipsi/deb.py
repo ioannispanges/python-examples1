@@ -7,7 +7,7 @@ def divide(a, b):
 
 
 numerator = 10
-demomirator = 2
+demomirator = 19
 result = divide(numerator, demomirator)
 
 print(f"The result of {numerator} / {demomirator} is: ", result)
