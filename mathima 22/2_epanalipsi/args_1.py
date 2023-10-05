@@ -1,6 +1,6 @@
-def sum_all(*args):
+def giannis(*args):
     return sum(args)
 
 
-result = sum_all(1, 2, 3, 4, 5)
+result = giannis(5.3, 3)
 print(result)
