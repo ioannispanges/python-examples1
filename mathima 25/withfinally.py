@@ -9,7 +9,6 @@ while True:
         print("O antistrofos tou arithmou", numbers, "einai:", result)
         if numbers == 1:
             break
-
-    print("Telos Domis")
-
+    finally:
+        print("Telos Domis")
 print("Telos programmatos")
