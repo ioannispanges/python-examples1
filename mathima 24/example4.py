@@ -6,4 +6,4 @@ try:
 except ZeroDivisionError:
     print("Error: Den epitrepetai i diairesi me to miden")
 except ValueError:
-    print("Error: Parakaloume eisagete egkires sto paranomasti")
+    print("Error: Parakaloume eisagete egkires sto arithmiti i paranomasti ")
