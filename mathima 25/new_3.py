@@ -1,3 +1,4 @@
+
 try:
     numbers = int(input("Eisagete enan  arithmo :"))
     result = 1 / numbers
