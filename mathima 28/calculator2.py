@@ -27,7 +27,7 @@ my_calculator.subtract(10, 3)
 print("Result after subtraction:", my_calculator.get_result())
 
 try:
-    my_calculator.divide(3, 0)
+    my_calculator.divide(3, 3)
     print("Result after division:", my_calculator.get_result())
 except ZeroDivisionError as e:
     print("Error:", e)
