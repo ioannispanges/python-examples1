@@ -12,13 +12,13 @@ class Vector:
     def __add__(self, other):
         return Vector(self.x + other.x, self.y + other.y)
 
-    def __sub(self, other):
+    def __sub__(self, other):
         return Vector(self.x - other.x, self.y - other.y)
 
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
 
-    def __del__(self, other):
+    def __del__(self):
         return f"Vector ({self.x}, {self.y}) has been deleted"
 
     def __call__(self):
@@ -37,3 +37,5 @@ print(v1 + v2)
 print(v1 - v2)
 print(v1 == v2)
 print(v1())
+
+del v1
