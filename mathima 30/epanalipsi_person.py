@@ -8,4 +8,4 @@ class Person:
 
 
 person1 = Person("John Doe", 25)
-person1.emfanizw()
+# person1.emfanizw()
