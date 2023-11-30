@@ -23,8 +23,8 @@ point3 = Point(1, 2)
 print(point1 == point2)
 print(point1 == point3)
 
+print(point1 < point2)
 print(point1 > point2)
-print(point1 < point3)
 
 # points = [point1, point2, point3]
 # sorted_points = sorted(points)
