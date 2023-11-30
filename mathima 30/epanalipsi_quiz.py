@@ -14,25 +14,14 @@ class Quiz:
             print("No questions added to the quiz yet")
             return
 
-        print("Available questions:")
-        for idx, question in enumerate(self.questions, start=1):
-            print(f"{idx}. {question}")
+        for question, correct_answer in self.questions.items():
+            user_answer = input(f"{question} (Enter your answer): ")
 
-        try:
-            question_number = int(input("Choose a question number to answer: "))
-            if 1 <= question_number <= total_questions:
-                selected_question = list(self.questions.keys())[question_number - 1]
-                user_answer = input(f"{selected_question} (Enter your answer): ")
-
-                if user_answer.lower() == self.questions[selected_question].lower():
-                    print("Correct!")
-                    score += 1
-                else:
-                    print(f"Incorrect! The correct answer is {self.questions[selected_question]}")
+            if user_answer.lower() == correct_answer.lower():
+                print("Correct!")
+                score += 1
             else:
-                print("Invalid question number. Please choose a valid number.")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+                print(f"Incorrect! The correct answer is {correct_answer}")
 
         print(f"You scored {score}/{total_questions} in the quiz")
 
