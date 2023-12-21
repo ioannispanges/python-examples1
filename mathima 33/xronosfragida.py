@@ -1,7 +1,6 @@
 import os
 import shutil
 import time
-
 current_file = r'C:\Users\evdokimos\Desktop\python\mathima 33\services\price.xls'
 new_file = r'C:\Users\evdokimos\Desktop\python\mathima 33\latest\price.xls'
 
