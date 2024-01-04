@@ -50,7 +50,7 @@ class AddressBookApp:
             messagebox.showwarning("Warning", "Please select a contact to remove")
 
     def save_contacts(self):
-        messagebox.showinfo("Saved", "Contacts saved to file")
+        messagebox.showinfo("Saved", "Contacts save")
 
 
 def main():
