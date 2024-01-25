@@ -27,7 +27,7 @@ preprocessor = ColumnTransformer(
     remainder='passthrough'
 )
 
-pipeline = Pipeline(steps=[('preprocessor'), preprocessor])
+pipeline = Pipeline(steps=[('preprocessor', preprocessor)])
 
 x_tranformed = pipeline.fit_transform(df.drop('Label', axis=1))
 y = df['Label']
@@ -36,7 +36,7 @@ preprocessed_df = pd.concat([pd.DataFrame(x_tranformed), y], axis=1)
 print("\nPreprocessed Dataset:")
 print(preprocessed_df)
 
-X_train, X_Test, y_train, y_test = train_test_split(x_tranformed, test_size=0.2, random_state=42)
+X_train, X_Test, y_train, y_test = train_test_split(x_tranformed, y, test_size=0.2, random_state=42)
 
 print("\nTraining Set:")
 print(pd.DataFrame(X_train), y_train)
